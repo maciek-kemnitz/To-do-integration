@@ -1,14 +1,14 @@
 parameters:
     database_driver: pdo_mysql
-    database_host: localhost
+    database_host: 127.0.0.1
     database_port: null
-    database_name: integration
-    database_user: root
+    database_name: zl
+    database_user: zl
     database_password: madeinchina
     mailer_transport: smtp
     mailer_host: localhost
     mailer_user: null
     mailer_password: null
     locale: en
-    secret: fb92dc932554725d46617e69ecade1c296926874
+    secret: 2c2af60ad33b3cc4217e10b1b91cd0d5b
     database_path: null
