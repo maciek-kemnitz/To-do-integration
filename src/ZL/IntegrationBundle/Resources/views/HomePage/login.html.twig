@@ -1,6 +1,14 @@
 {% extends 'ZLIntegrationBundle::main_layout.html.twig' %}
 
 {% block body %}
+
+    <script>
+        $('#test a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+    </script>
+
 	<div class="navbar navbar-inverse ">
 	    <div class="navbar-inner">
             <div class="container">
@@ -22,36 +30,54 @@
 	<div class="container">
         <div class="row">
             <div class="span3">
-			    <form action="{{ path('login') }}" method="post">
-			    <legend>Log in!</legend>
-			    <label>Login</label>
-			    <input type="text" name="login" placeholder="login"/>
-                <label>Password</label>
-				<input type="password" name="password" placeholder="password"/>
-                <button type="submit" class="btn">Submit</button>
-			    </form>
+                <ul class="nav nav-tabs" id="test">
+                    <li><a href="#login" data-toggle="login">Login</a></li>
+                    <li><a href="#register" data-toggle="register">Register</a></li>
+                </ul>
+
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="login">
+                        <form action="{{ path('login') }}" method="post">
+                            <label>Login</label>
+                            <input type="text" name="login" placeholder="login"/>
+                            <label>Password</label>
+                            <input type="password" name="password" placeholder="password"/>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="register">
+                        <form action="{{ path('login') }}" method="post">
+                            <label>Login</label>
+                            <input type="text" name="login" placeholder="login"/>
+                            <label>Password</label>
+                            <input type="password" name="password" placeholder="password"/>
+                            <label>Repeat</label>
+                            <input type="password" name="password" placeholder="password"/>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+             </div>
+
 			</div>
+        </div>
 			<div class="span4">
-                <h1>Why?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis rhoncus leo sit amet interdum. Fusce sit amet euismod nulla.
-                   Nam elementum felis quis elit sagittis accumsan. Maecenas luctus purus ac libero placerat ut egestas velit sagittis. Praesent porta elit nec
-                   nunc luctus eleifend. Praesent lacinia ipsum quis mauris pellentesque a semper nulla iaculis. Etiam non tellus nisi. Duis mollis faucibus placerat.
-                   Quisque nec porttitor augue. In id elit dui. Etiam aliquet scelerisque arcu vel aliquet. Donec urna quam, auctor sit amet dictum non, pharetra semper orci.
-                   Cras semper pharetra mauris. Curabitur eu quam nibh.
-                </p>
+                <img alt="todo"></img>
 			</div>
 
 
 		</div>
         <div class="row">
             <div class="span3 well">
-                <legend>1 Login</legend>
+
+                <legend>1. Login</legend>
             </div>
             <div class="span3 well">
-                <legend>2 Connect</legend>
+                <legend>2. Connect</legend>
             </div>
             <div class="span3 well">
-                <legend>3 Napierdalaj!</legend>
+                <legend>3. Napierdalaj!</legend>
             </div>
         </div>
 		</div>
