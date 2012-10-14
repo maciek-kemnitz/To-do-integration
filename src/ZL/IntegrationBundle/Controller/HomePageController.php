@@ -8,6 +8,8 @@ class HomePageController extends Controller
 {
     public function loginAction()
     {
+		
+		
         return $this->render('ZLIntegrationBundle:HomePage:login.html.twig');
     }
 	
