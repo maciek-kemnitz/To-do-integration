@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd3610f9-a7ee-47c7-9e56-baa6e1c6404e" name="Default" comment="aaa">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/images/custom/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gvrdmpvd.eho.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/custom/stylesheet.css" />
+    <list default="true" id="bd3610f9-a7ee-47c7-9e56-baa6e1c6404e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/js/jquery-1.8.2.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/HomePage/login.html.twig" afterPath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/HomePage/login.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/main_layout.html.twig" afterPath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/main_layout.html.twig" />
     </list>
     <ignored path="To-do.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -208,6 +203,10 @@
               <option name="myItemId" value="zlintegration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -236,6 +235,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="To-do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="To-do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlintegration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -547,7 +568,11 @@
       <created>1350226907775</created>
       <updated>1350226907775</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="arrows&#10;">
+      <created>1350230674271</created>
+      <updated>1350230674271</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -609,7 +634,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="aaa" />
+    <option name="LAST_COMMIT_MESSAGE" value="arrows&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -623,6 +648,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="aaa" />
+    <MESSAGE value="arrows&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
