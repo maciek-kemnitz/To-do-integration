@@ -8,5 +8,6 @@ vendor/*
 web/uploads/*
 web/bundles/*
 */.idea/*
+*/composer.lock
 
 # Configuration files
