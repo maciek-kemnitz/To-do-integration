@@ -1,4 +1,4 @@
-Zl\IntegrationBundle\Entity\User:
+ZL\IntegrationBundle\Entity\User:
   type: entity
   table: user 
   id:

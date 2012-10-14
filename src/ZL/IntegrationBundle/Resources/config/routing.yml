@@ -1,3 +1,7 @@
 login:
     pattern:  /
     defaults: { _controller: ZLIntegrationBundle:HomePage:login }
+    
+main:
+    pattern:  /home
+    defaults: { _controller: ZLIntegrationBundle:HomePage:main }

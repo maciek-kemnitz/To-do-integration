@@ -36,13 +36,12 @@ $(function () {
 
                 <div class="tab-content">
                     <div class="tab-pane active" id="login">
-                        <form action="{{ path('login') }}" method="post">
-                            <label>Login</label>
-                            <input type="text" name="login" placeholder="login"/>
-                            <label>Password</label>
-                            <input type="password" name="password" placeholder="password"/>
-                            <button type="submit" class="btn">Submit</button>
-                        </form>
+						<form action="{{ path('login') }}" method="post" {{ form_enctype(form) }}>
+							{{ form_row(form.login) }}
+							{{ form_row(form.password) }}
+							{{ form_rest(form) }}
+							<input type="submit" />
+						</form>
                     </div>
                     <div class="tab-pane" id="register">
                         <form action="{{ path('login') }}" method="post">
