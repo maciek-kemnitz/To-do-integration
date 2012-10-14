@@ -10,4 +10,9 @@ class HomePageController extends Controller
     {
         return $this->render('ZLIntegrationBundle:HomePage:login.html.twig');
     }
+	
+	public function mainAction()
+    {
+        return $this->render('ZLIntegrationBundle:HomePage:main.html.twig');
+    }
 }
