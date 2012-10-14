@@ -2,12 +2,6 @@
 
 {% block body %}
 
-    <script>
-        $('#test a').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-        })
-    </script>
 
 	<div class="navbar navbar-inverse ">
 	    <div class="navbar-inner">
@@ -31,8 +25,8 @@
         <div class="row">
             <div class="span3">
                 <ul class="nav nav-tabs" id="test">
-                    <li><a href="#login" data-toggle="login">Login</a></li>
-                    <li><a href="#register" data-toggle="register">Register</a></li>
+                    <li><a href="#login" data-toggle="tab">Login</a></li>
+                    <li><a href="#register" data-toggle="tab">Register</a></li>
                 </ul>
 
 
@@ -63,7 +57,7 @@
 			</div>
         </div>
 			<div class="span4">
-                <img alt="todo"></img>
+
 			</div>
 
 
@@ -72,12 +66,17 @@
             <div class="span3 well">
 
                 <legend>1. Login</legend>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo nisl, elementum sit amet tincidunt eget, sagittis vitae risus. Duis eget nisi ante</p>
             </div>
+            <img src="{{ asset('images/custom/arrow.png') }}" alt="Symfony!" />
+            <img class="arrow-img" />
             <div class="span3 well">
                 <legend>2. Connect</legend>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo nisl, elementum sit amet tincidunt eget, sagittis vitae risus. Duis eget nisi ante</p>
             </div>
             <div class="span3 well">
                 <legend>3. Napierdalaj!</legend>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo nisl, elementum sit amet tincidunt eget, sagittis vitae risus. Duis eget nisi ante</p>
             </div>
         </div>
 		</div>
