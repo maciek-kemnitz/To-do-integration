@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd3610f9-a7ee-47c7-9e56-baa6e1c6404e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/js/jquery-1.8.2.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/bootstrap/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/HomePage/login.html.twig" afterPath="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/HomePage/login.html.twig" />
     </list>
     <ignored path="To-do.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +27,7 @@
       <file leaf-file-name="login.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/HomePage/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="32" selection-start="2804" selection-end="2804" vertical-scroll-proportion="0.6946108">
+            <state line="64" column="0" selection-start="2494" selection-end="2494" vertical-scroll-proportion="1.0858283">
               <folding />
             </state>
           </provider>
@@ -42,7 +43,7 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/custom/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="10" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+            <state line="4" column="16" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,7 +68,7 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/bootstrap/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="50" selection-start="2401" selection-end="2401" vertical-scroll-proportion="-112.2">
+            <state line="2940" column="25" selection-start="51275" selection-end="51275" vertical-scroll-proportion="-15.92">
               <folding />
             </state>
           </provider>
@@ -109,9 +110,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/bootstrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/main_layout.html.twig" />
         <option value="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/custom/stylesheet.css" />
+        <option value="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/bootstrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/HomePage/login.html.twig" />
       </list>
     </option>
@@ -572,7 +573,11 @@
       <created>1350230674271</created>
       <updated>1350230674271</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="arrows&#10;">
+      <created>1350230877705</created>
+      <updated>1350230877705</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -671,13 +676,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="50" selection-start="2401" selection-end="2401" vertical-scroll-proportion="-112.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/images/custom/arrow.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -688,6 +686,20 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/custom/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2940" column="25" selection-start="51275" selection-end="51275" vertical-scroll-proportion="-15.92">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/main_layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="41" selection-start="168" selection-end="169" vertical-scroll-proportion="-4.576923">
@@ -695,16 +707,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/public/css/custom/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ZL/IntegrationBundle/Resources/views/HomePage/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="32" selection-start="2804" selection-end="2804" vertical-scroll-proportion="0.6946108">
+        <state line="64" column="0" selection-start="2494" selection-end="2494" vertical-scroll-proportion="1.0858283">
           <folding />
         </state>
       </provider>
