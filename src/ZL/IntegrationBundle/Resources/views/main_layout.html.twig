@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        
+		
+		{% stylesheets filter='cssrewrite'
+			'bundles/zlintegration/css/bootstrap/css/bootstrap.css'
+		%}
+			<link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}" />
+		{% endstylesheets %}
+        {# javascripts 
+            'bundles/zlaptomain/js/vendors/jquery-1.7.2.min.js'
+            'bundles/zlaptomain/js/vendors/json2.js'
+            'bundles/zlaptomain/js/vendors/underscore-min.js'
+            'bundles/zlaptomain/js/vendors/backbone-min.js'
+			'../vendor/twitter/bootstrap/js/bootstrap-modal.js'
+			'../vendor/twitter/bootstrap/js/bootstrap-dropdown.js'
+			'bundles/zlaptomain/js/product/product_modal.js'
+			'bundles/zlaptomain/js/moderation/moderation.js'
+			
+			'bundles/zlaptomain/js/main.js'
+        %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts #}
+                
+    </head>
+    <body>
+	    {% block body %}
+			
+		{% endblock %}
+    </body>
+</html>

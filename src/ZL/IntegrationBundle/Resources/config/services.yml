@@ -1,0 +1,7 @@
+parameters:
+#    zl_integration.example.class: ZL\IntegrationBundle\Example
+
+services:
+#    zl_integration.example:
+#        class: %zl_integration.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,3 @@
+zl_integration_homepage:
+    pattern:  /
+    defaults: { _controller: ZLIntegrationBundle:HomePage:login }

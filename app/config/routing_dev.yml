@@ -25,3 +25,7 @@ _configurator:
 
 _main:
     resource: routing.yml
+    
+zl:
+  resource: "@ZLIntegrationBundle/Resources/config/routing.yml"
+  prefix:		/zl
