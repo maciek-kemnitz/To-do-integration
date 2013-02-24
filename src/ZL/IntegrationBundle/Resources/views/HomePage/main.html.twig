@@ -2,5 +2,8 @@
 
 {% block body %}
 
-
+    {% for project in projects %}
+        {{ project.name }}
+        <hr>
+    {% endfor %}
 {% endblock %}
