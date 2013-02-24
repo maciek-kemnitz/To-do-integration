@@ -64,20 +64,15 @@ class HomePageController extends Controller
 				unset($list->creator);
 			}
 
+
+			$list = $this->api('projects/'. $project->id .'/todolists/'. $list->id .'.json');
 			$tmp['list'] = $list;
 
+
+			var_dump($tmp);
 			$projectName = $projectName ? $projectName : "not_a_project";
  			$projects[$projectName]["lists"][] = $tmp;
 		}
-		/*foreach($result as $project)
-		{
-			$toDoList = $this->api("projects/". $project['id'] . "todolists.json");
-			$projects[$project['id']]['project'] = $project;
-			$projects[$project['id']]['todolist'] = $toDoList;
-		}*/
-
-
-
 
         return $this->render('ZLIntegrationBundle:HomePage:main.html.twig', array("projects" => $projects));
     }
