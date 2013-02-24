@@ -3,15 +3,25 @@
 {% block body %}
     <div class="container">
         <div class="row" style="text-align: center">
-            <img class="img-circle" src="{{ me.avatar_url }}" />
-            <div class="span8" style="">
+
+            <div class="span8" style="width: 100%">
             <h1>Cześć! Co dziś będziesz robił?</h1>
 
             <p class="lead">Kliknij w któryś z projektów, żeby zobaczyć zadania</p>
 
             </div>
         </div>
+        <ul class="nav nav-tabs">
+            <li><img class="img-circle pull-left" src="{{ me.avatar_url }}" /></li>
+            <li class="active">
+                <a href="#">Dziś</a>
+            </li>
+            <li><a href="#">Wczoraj</a></li>
+            <li><a href="#">Inni</a></li>
+        </ul>
+
         <div class="tabbable tabs-left">
+
             <ul class="nav nav-tabs">
                 {% for project in projects %}
 
@@ -26,12 +36,15 @@
 
                 {% for list in project.lists %}
                     {% for todo in list.list.todos.remaining %}
-                    <div class="span6">
-                    <p>{{ todo.content }}</p>
-                    {% if todo.due_at %}
-                    <p class="muted">({{ todo.due_at }})</p>
-                    {% endif %}
-                        <div class="btn btn-success pull-right">Dziś to zrobię!</div>
+                    <div class="span6 well" style="margin:20px 0px">
+                        <div class="span5">
+                            <p>{{ todo.content }}</p>
+                            {% if todo.due_at %}
+                            <p class="muted">({{ todo.due_at }})</p>
+                            {% endif %}
+                        </div>
+                        <div class="btn btn-small btn-success pull-left" style="margin-right: 10px"><i class="icon-heart"></i>Dziś to zrobię!</div>
+                        <div class="btn btn-small btn-info pull-left">Trochę kontekstu?</div>
                     </div>
 
 
