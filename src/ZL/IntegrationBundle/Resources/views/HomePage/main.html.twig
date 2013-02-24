@@ -1,9 +1,23 @@
 {% extends 'ZLIntegrationBundle::main_layout.html.twig' %}
 
 {% block body %}
+    <div class="container">
+        <div class="row" style="text-align: center">
 
-    {% for project in projects %}
-        {{ project.name }}
-        <hr>
-    {% endfor %}
+            <div class="span8" style="width:100%">
+
+            <h1>Cześć! Co dziś będziesz robił?</h1>
+
+            <p class="lead">Kliknij w któryś z projektów, żeby zobaczyć zadania</p>
+
+            </div>
+        </div>
+        <div class="row" style="text-align: center;margin-top: 20px">
+            {% for project in projects %}
+                <div class="span4">
+                {{ project.name }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}
