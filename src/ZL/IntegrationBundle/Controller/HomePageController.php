@@ -37,6 +37,42 @@ class HomePageController extends Controller
 	
 	public function mainAction()
     {
+		$toDoLists = $this->api("todolists.json");
+
+		$structure = array();
+		foreach($toDoLists as $list)
+		{
+			$tmp = array();
+			if (isset($list->bucket))
+			{
+				$tmp['project'] = $list->bucket;
+				unset($list->bucket);
+			}
+
+			if (isset($list->creator))
+			{
+				$tmp['creator'] = $list->creator;
+				unset($list->creator);
+			}
+
+			$tmp['list'] = $list;
+
+			$structure[] = $tmp;
+		}
+		/*foreach($result as $project)
+		{
+			$toDoList = $this->api("projects/". $project['id'] . "todolists.json");
+			$projects[$project['id']]['project'] = $project;
+			$projects[$project['id']]['todolist'] = $toDoList;
+		}*/
+		var_dump($structure);
+		#var_dump($result);
+
+        return $this->render('ZLIntegrationBundle:HomePage:main.html.twig', array("structure" => $structure));
+    }
+
+	public function api($method)
+	{
 		$session  = $this->get("session");
 		$user = $session->get('user');
 
@@ -46,7 +82,7 @@ class HomePageController extends Controller
 		$username = $user->getLogin();
 		$password = $user->getPassword();
 
-		curl_setopt($session, CURLOPT_URL, $basecamp_url.'projects.json');
+		curl_setopt($session, CURLOPT_URL, $basecamp_url.$method);
 		curl_setopt($session, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 		curl_setopt($session, CURLOPT_HTTPGET, 1);
 		curl_setopt($session, CURLOPT_HEADER, false);
@@ -62,10 +98,12 @@ class HomePageController extends Controller
 
 		curl_close($session);
 
-		$projects = json_decode($response);
+		$response = json_decode($response);
+		return $response;
+	}
 
-		#var_dump($projects);
+	public function changeCollecionKeys($collection, $key)
+	{
 
-        return $this->render('ZLIntegrationBundle:HomePage:main.html.twig', array("projects" => $projects));
-    }
+	}
 }
