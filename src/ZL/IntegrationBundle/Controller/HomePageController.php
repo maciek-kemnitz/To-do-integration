@@ -37,8 +37,10 @@ class HomePageController extends Controller
 	
 	public function mainAction()
     {
+		$me = $this->api("people/me.json");
+
 		$toDoLists = $this->api("todolists.json");
-		//var_dump($toDoLists);
+
 		$projects = array();
 		foreach($toDoLists as $list)
 		{
@@ -68,13 +70,11 @@ class HomePageController extends Controller
 			$list = $this->api('projects/'. $project->id .'/todolists/'. $list->id .'.json');
 			$tmp['list'] = $list;
 
-
-			var_dump($tmp);
 			$projectName = $projectName ? $projectName : "not_a_project";
  			$projects[$projectName]["lists"][] = $tmp;
 		}
 
-        return $this->render('ZLIntegrationBundle:HomePage:main.html.twig', array("projects" => $projects));
+        return $this->render('ZLIntegrationBundle:HomePage:main.html.twig', array("projects" => $projects, "me" => $me));
     }
 
 	public function api($method)
