@@ -67,7 +67,7 @@ class HomePageController extends Controller
 			$tmp['list'] = $list;
 
 			$projectName = $projectName ? $projectName : "not_a_project";
- 			$projects[$projectName][] = $tmp;
+ 			$projects[$projectName]["lists"][] = $tmp;
 		}
 		/*foreach($result as $project)
 		{
@@ -78,7 +78,6 @@ class HomePageController extends Controller
 
 
 
-exit;
 
         return $this->render('ZLIntegrationBundle:HomePage:main.html.twig', array("projects" => $projects));
     }

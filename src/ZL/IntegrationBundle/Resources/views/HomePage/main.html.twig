@@ -12,12 +12,34 @@
 
             </div>
         </div>
-        <div class="row" style="text-align: center;margin-top: 20px">
+        <div class="tabbable tabs-left">
+            <ul class="nav nav-tabs">
+                {% for project in projects %}
+
+                    <li><a href="#{{ project.details.id }}" data-toggle="tab">{{ project.details.name }}</a> </li>
+
+                {% endfor %}
+
+            </ul>
+        <div class="tab-content">
             {% for project in projects %}
-                <div class="span4">
-                {{ project.name }}
+                <div class="tab-pane" id="{{ project.details.id }}">
+
+                {% for list in project.lists %}
+
+                    <p>{{ list.list.name }}</p>
+
+
+                {% endfor %}
+
                 </div>
             {% endfor %}
+
         </div>
-    </div>
+        </div>
+
+
+
+
+
 {% endblock %}
