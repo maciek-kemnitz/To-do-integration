@@ -38,15 +38,24 @@ class HomePageController extends Controller
 	public function mainAction()
     {
 		$toDoLists = $this->api("todolists.json");
-
-		$structure = array();
+		//var_dump($toDoLists);
+		$projects = array();
 		foreach($toDoLists as $list)
 		{
 			$tmp = array();
+			$projectName = null;
 			if (isset($list->bucket))
 			{
-				$tmp['project'] = $list->bucket;
+				$project = $list->bucket;
 				unset($list->bucket);
+
+				$projectName = $project->name;
+
+				if (!isset($projects[$project->name]))
+				{
+
+					$projects[$projectName]["details"] = $project;
+				}
 			}
 
 			if (isset($list->creator))
@@ -57,7 +66,8 @@ class HomePageController extends Controller
 
 			$tmp['list'] = $list;
 
-			$structure[] = $tmp;
+			$projectName = $projectName ? $projectName : "not_a_project";
+ 			$projects[$projectName][] = $tmp;
 		}
 		/*foreach($result as $project)
 		{
@@ -65,10 +75,12 @@ class HomePageController extends Controller
 			$projects[$project['id']]['project'] = $project;
 			$projects[$project['id']]['todolist'] = $toDoList;
 		}*/
-		var_dump($structure);
-		#var_dump($result);
 
-        return $this->render('ZLIntegrationBundle:HomePage:main.html.twig', array("structure" => $structure));
+
+
+exit;
+
+        return $this->render('ZLIntegrationBundle:HomePage:main.html.twig', array("projects" => $projects));
     }
 
 	public function api($method)
