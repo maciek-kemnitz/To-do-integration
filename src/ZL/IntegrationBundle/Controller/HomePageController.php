@@ -58,6 +58,10 @@ class HomePageController extends Controller
 
 					$projects[$projectName]["details"] = $project;
 				}
+                else
+                {
+                    continue;
+                }
 			}
 
 			if (isset($list->creator))
